@@ -1,0 +1,17 @@
+{
+  "name": "skin-gen",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Gerador de imagens de VIP para Minecraft com renderizacao 3D da skin",
+  "scripts": {
+    "start": "tsx src/gerar.ts"
+  },
+  "dependencies": {
+    "skia-canvas": "^3",
+    "tsx": "^4"
+  },
+  "allowScripts": {
+    "skia-canvas": true,
+    "esbuild": true
+  }
+}

@@ -1,0 +1,19 @@
+GERADOR DE IMAGENS DE VIP
+
+1) Instale o Node.js (LTS): https://nodejs.org
+2) Dois cliques em INICIAR.bat (na primeira vez instala as dependencias).
+3) Ele pergunta, nessa ordem:
+   - Nome do VIP com cores, ex: &a&lVIP   (aceita &0-&f, &l negrito, &o italico...)
+   - Pose: 1 bracos cruzados / 2 bracos soltos / 3 maos na cintura
+   - Nickname
+   - Texto embaixo (opcional, ex: 1 MES)
+4) A placa sai como "&a&lVIP &a<nick>": o nick usa a cor do prefixo, sem negrito.
+5) A imagem (PNG transparente) vai para a pasta "saida" e ele ja volta a pedir outra.
+   Dica: Enter em branco repete o valor anterior. Feche a janela para sair.
+
+Skin: vzge.me/skin/<nick>, depois Mojang e minotar. Se o nick for pirata, coloque
+a skin em skins/NICK.png (tem prioridade). O modelo slim/classic e detectado pela
+textura e pelo metadado Mojang; para forcar, use skins/NICK.slim.png ou
+skins/NICK.classic.png.
+
+Poses/camera: src/poses.ts | Fonte: lib/minecraft-font-renderer (ISC)
